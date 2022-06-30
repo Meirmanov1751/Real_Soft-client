@@ -1,0 +1,44 @@
+.card{
+  margin: 10px;
+  width: 17em;
+}
+h5{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-clamp: 1;
+  box-orient: vertical;
+}
+.text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+}
+.card__btns{
+  display: flex;
+  justify-content: space-between;
+}
+.card__btn{
+  background-color: #F8522F;
+  border: 0;
+  border-radius: 5px;
+}
+.card__btn:hover{
+  background-color: #F56546;
+}
+
+@media (max-width: 720px) {
+  .card{
+    width: 95%;
+  }
+}

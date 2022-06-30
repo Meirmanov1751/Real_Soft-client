@@ -1,0 +1,22 @@
+*{
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.seach{
+  width: 100%;
+}
+.seach__input{
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .container{
+    padding: 0 5px;
+  }
+
+}
