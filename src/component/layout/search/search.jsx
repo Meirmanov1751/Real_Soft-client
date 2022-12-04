@@ -6,15 +6,16 @@ const Search = () => {
   let [searchParams, setSearchParams] = useSearchParams()
   let [text, setText] = useState()
 
-  function handleSearch(e){
+  function handleSearch(e) {
     setText(e.target.value)
     setSearchParams({title: e.target.value})
   }
 
   return (
     <div className={classes.seach}>
-      <div  className={"container"}>
-        <input type="search" className={classes.seach__input} onChange={(e) =>handleSearch(e)} value={text} placeholder="поиск.."/>
+      <div className={"container"}>
+        <input type="search" className={classes.seach__input} onChange={(e) => handleSearch(e)} value={text}
+               placeholder="поиск.."/>
       </div>
     </div>
   );

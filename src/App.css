@@ -1,21 +1,42 @@
-*{
+* {
   box-sizing: border-box;
 }
-.container{
+
+.container {
   max-width: 1240px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
-.seach{
-  width: 100%;
-}
-.seach__input{
+.seach {
   width: 100%;
 }
 
+.seach__input {
+  width: 100%;
+}
+
+.dropzone {
+  text-align: center;
+  padding: 30px;
+  border: 3px dashed #eeeeee;
+  background-color: #fafafa;
+  color: #bdbdbd;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.selected-file-wrapper {
+  text-align: center;
+}
+
+.selected-file {
+  color: #000;
+  font-weight: bold;
+}
+
 @media (max-width: 500px) {
-  .container{
+  .container {
     padding: 0 5px;
   }
 

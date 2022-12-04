@@ -5,8 +5,8 @@ let initial = {
   id: "",
 }
 
-export  function PostsReducer(state = initial, action) {
-  switch (action.type){
+export function PostsReducer(state = initial, action) {
+  switch (action.type) {
     case GET_POSTS:
       return {
         ...state,

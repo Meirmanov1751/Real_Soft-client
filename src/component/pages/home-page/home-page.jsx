@@ -12,18 +12,19 @@ const HomePage = () => {
   let titleFilter = searchParams.get('title')
 
   return (
+
     <div>
       <div className={classes.home}>
         <Outlet/>
         {posts ?
           titleFilter ?
-            posts.filter(p => p.title.toLowerCase().includes(titleFilter.toLowerCase())).map(post =>
-              <Card title={post.title} content={post.content} _id={post._id}/>
+            posts.filter(p => p.title).filter(p => p.title.toLowerCase().includes(titleFilter.toLowerCase())).map(post =>
+              <Card title={post.title} content={post.content} imagename={post.imagename} _id={post._id}/>
             )
-              :
+            :
             posts.map(post =>
-              <Card title={post.title} content={post.content} _id={post._id}/>
-          ):null}
+              <Card title={post.title} content={post.content} imagename={post.imagename} _id={post._id}/>
+            ) : null}
       </div>
     </div>
   );
